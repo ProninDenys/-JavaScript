@@ -9,9 +9,9 @@
     <script>
       // Minimum
       // JavaScript в <head>
-      var firstName1 = "John";
-      var lastName1 = "Connor";
-      console.log(firstName1 + " " + lastName1);
+      const firstNameJohn = "John";
+      const lastNameConnor = "Connor";
+      console.log(firstNameJohn + " " + lastNameConnor);
     </script>
   </head>
   <body>
@@ -24,9 +24,9 @@
        */
 
       // Однорядковий коментар
-      var firstName3 = "Alice";
-      var lastName3 = "Johnson";
-      console.log(firstName3 + " " + lastName3);
+      const firstNameAlice = "Alice";
+      const lastNameJohnson = "Johnson";
+      console.log(firstNameAlice + " " + lastNameJohnson);
 
       // Неправильні імена змінних (закоментовані):
       // var 1stName = "Wrong"; // не може починатися з цифри
@@ -38,30 +38,36 @@
 
     <script>
       // JavaScript перед <body>
-      var firstName2 = "Jane";
-      var lastName2 = "Smith";
-      console.log(firstName2 + " " + lastName2);
+      const firstNameJane = "Jane";
+      const lastNameSmith = "Smith";
+      console.log(firstNameJane + " " + lastNameSmith);
+    </script>
+
+    <script>
+      const firstNameBob = "Bob";
+      const lastNameBrown = "Brown";
+      console.log(firstNameBob + " " + lastNameBrown);
     </script>
 
     <script>
       // Medium
       // “Привіт”;
-      var userName = prompt("Enter your name:");
+      const userName = prompt("Enter your name:");
       alert("Hello, " + userName + "!");
 
       // поточний рік
       const currentYear = 2024;
 
       // рік народження користувача
-      var birthYear = prompt("Enter your birth year:");
-      var age = currentYear - birthYear;
+      const birthYear = prompt("Enter your birth year:");
+      const age = currentYear - birthYear;
       alert("Your age: " + age);
 
       // довжина сторони квадрату
-      var sideLength = prompt(
+      const sideLength = prompt(
         "Enter the length of the side of the square (in cm):"
       );
-      var perimeter = sideLength * 4;
+      const perimeter = sideLength * 4;
       alert("The perimeter of the square: " + perimeter + " cm");
     </script>
 
@@ -69,20 +75,20 @@
       // Maximum
 
       // radius of the circle
-      var radius = prompt("Enter the radius of the circle (in cm):");
-      var area = Math.PI * Math.pow(radius, 2);
+      const radius = prompt("Enter the radius of the circle (in cm):");
+      const area = Math.PI * Math.pow(radius, 2);
       alert("The area of the circle: " + area + " cm²");
 
       // two cities in kilometers
-      var distance = prompt("Enter the distance between two cities (in km):");
+      const distance = prompt("Enter the distance between two cities (in km):");
 
       // distance
-      var hours = prompt(
+      const hours = prompt(
         "Enter the number of hours you want to take to cover the distance:"
       );
 
       // speed
-      var speed = distance / hours;
+      const speed = distance / hours;
 
       // Display the required speed
       alert(
@@ -93,10 +99,10 @@
       const exchangeRate = 0.85;
 
       // dollars
-      var dollars = prompt("Enter the amount in dollars:");
+      const dollars = prompt("Enter the amount in dollars:");
 
       // dollars to euros
-      var euros = dollars * exchangeRate;
+      const euros = dollars * exchangeRate;
 
       // result
       alert(dollars + " dollars is equal to " + euros.toFixed(2) + " euros.");
