@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <title>JavaScript Usage Examples</title>
+
+    <script>
+      // Minimum
+      // JavaScript в <head>
+      const firstNameJohn = "John";
+      const lastNameConnor = "Connor";
+      console.log(firstNameJohn + " " + lastNameConnor);
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Usage Examples</h1>
+
+    <script>
+      /*
+       * Багаторядковий коментар
+       * Багаторядковий коментар
+       */
+
+      // Однорядковий коментар
+      const firstNameAlice = "Alice";
+      const lastNameJohnson = "Johnson";
+      console.log(firstNameAlice + " " + lastNameJohnson);
+
+      // Неправильні імена змінних (закоментовані):
+      // var 1stName = "Wrong"; // не може починатися з цифри
+      // var last-Name = "Wrong"; // не може містити дефіс
+      // var first name = "Wrong"; // не може містити пробіл
+      // var @name = "Wrong"; // не може містити спецсимволи
+      // var var = "Wrong"; // не може бути зарезервованим словом
+    </script>
+
+    <script>
+      // JavaScript перед <body>
+      const firstNameJane = "Jane";
+      const lastNameSmith = "Smith";
+      console.log(firstNameJane + " " + lastNameSmith);
+    </script>
+
+    <script>
+      const firstNameBob = "Bob";
+      const lastNameBrown = "Brown";
+      console.log(firstNameBob + " " + lastNameBrown);
+    </script>
+
+    <script>
+      // Medium
+      // “Привіт”;
+      const userName = prompt("Enter your name:");
+      alert("Hello, " + userName + "!");
+
+      // поточний рік
+      const currentYear = 2024;
+
+      // рік народження користувача
+      const birthYear = prompt("Enter your birth year:");
+      const age = currentYear - birthYear;
+      alert("Your age: " + age);
+
+      // довжина сторони квадрату
+      const sideLength = prompt(
+        "Enter the length of the side of the square (in cm):"
+      );
+      const perimeter = sideLength * 4;
+      alert("The perimeter of the square: " + perimeter + " cm");
+    </script>
+
+    <script>
+      // Maximum
+
+      // radius of the circle
+      const radius = prompt("Enter the radius of the circle (in cm):");
+      const area = Math.PI * Math.pow(radius, 2);
+      alert("The area of the circle: " + area + " cm²");
+
+      // two cities in kilometers
+      const distance = prompt("Enter the distance between two cities (in km):");
+
+      // distance
+      const hours = prompt(
+        "Enter the number of hours you want to take to cover the distance:"
+      );
+
+      // speed
+      const speed = distance / hours;
+
+      // Display the required speed
+      alert(
+        "You need to travel at a speed of " + speed + " km/h to reach on time."
+      );
+
+      // 1 dollar = 0.92 euros)
+      const exchangeRate = 0.85;
+
+      // dollars
+      const dollars = prompt("Enter the amount in dollars:");
+
+      // dollars to euros
+      const euros = dollars * exchangeRate;
+
+      // result
+      alert(dollars + " dollars is equal to " + euros.toFixed(2) + " euros.");
+    </script>
+  </body>
+</html>
